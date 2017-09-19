@@ -21,11 +21,15 @@ export default class Boot extends Phaser.State {
   preload () {
     // Load anything you need for the preloader (e.g. loading bars) here
     this.load.image('loaderBar', 'assets/images/loader-bar.png')
+    this.load.image('background', 'assets/images/background.png')
   }
 
   create () {
     // Set the stage background colour
-    this.game.stage.backgroundColor = '#000'
+    background = game.add.tileSprite(0, 0, this.game.width, this.game.height, 'background');
+
+
+    player = game.add
 
     // Everything from the preload function will have been loaded into cache by
     // this point, so we can now start the preloader
