@@ -16,6 +16,7 @@ export default class Preloader extends Phaser.State {
     this.load.setPreloadSprite(this.loader)
 
     // Load any assets for the game here
+	  this.game.load.spritesheet('pepe', 'assets/sprites/pepe.png', 107, 64)
   }
 
   create () {
